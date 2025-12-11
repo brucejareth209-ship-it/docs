@@ -1,4 +1,19 @@
-Plugin,Metric
+git config --global commit.gpgsign true
+commit.gpgsign
+git config commit.gpgsign true
+package com.therightway.podcastplatform;
+
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+
+public class ConfirmationPage extends WebPage {
+    private static final long serialVersionUID = 1L;
+
+    public ConfirmationPage() {
+        // Simple message displayed on the confirmation page
+        add(new Label("confirmationMessage", "Thank you! Your 10% discount code has been sent to your email."));
+    }
+}Plugin,Metric
 cpu,{{ HOSTNAME }}.cpu.percent-idle
 cpu,{{ HOSTNAME }}.cpu.percent-interrupt
 cpu,{{ HOSTNAME }}.cpu.percent-nice
